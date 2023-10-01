@@ -80,16 +80,19 @@ int main(){
             matrix[nl][y] = a[o];
             o = o + 1;
         }
+        if(o >= k){break;};
                    nl = nl + 1;
         for (x = nl; x <= nr; x++){
             matrix[x][mr] = a[o];
             o = o + 1;
         }
+        if(o >= k){break;};
                     mr = mr - 1;
         for (y = mr; y >= ml; y--){
             matrix[nr][y] = a[o];
             o = o + 1;
         }
+        if(o >= k){break;};
                     nr = nr - 1;
         for (x = nr; x >= nl; x--){
             matrix[x][ml] = a[o];
